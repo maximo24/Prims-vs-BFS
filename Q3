@@ -1,0 +1,18 @@
+For a directed graph,
+
+I would firstly mark all the vertices as unvisited. Then, I'd start by taking a vertex and pushing it into the queue.
+Note that I'll enqueue the vertex from the rear and dequeue the vertex at the front.
+
+Now I'll loop until the queue is finished.
+
+Take the vertex by dequeuing from the queue and mark it as visited.
+
+Find its neighbour and check of there exists an edge between the vertex and neighbour.
+
+If true, enqueue into the queue and determine the weight from vertex to neighbour.
+
+If false, continue to find other neighbours.
+
+Go to the loop condition and continue until the queue is finished.
+
+Print the total weight that was determined.
